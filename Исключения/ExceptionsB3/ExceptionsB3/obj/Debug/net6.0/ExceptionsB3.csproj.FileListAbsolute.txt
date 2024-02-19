@@ -1,0 +1,5 @@
+C:\Users\Merkulovaae\source\repos\ExceptionsB3\ExceptionsB3\obj\Debug\net6.0\ExceptionsB3.csproj.AssemblyReference.cache
+C:\Users\Merkulovaae\source\repos\ExceptionsB3\ExceptionsB3\obj\Debug\net6.0\ExceptionsB3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Merkulovaae\source\repos\ExceptionsB3\ExceptionsB3\obj\Debug\net6.0\ExceptionsB3.AssemblyInfoInputs.cache
+C:\Users\Merkulovaae\source\repos\ExceptionsB3\ExceptionsB3\obj\Debug\net6.0\ExceptionsB3.AssemblyInfo.cs
+C:\Users\Merkulovaae\source\repos\ExceptionsB3\ExceptionsB3\obj\Debug\net6.0\ExceptionsB3.csproj.CoreCompileInputs.cache

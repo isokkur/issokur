@@ -1,0 +1,15 @@
+C:\Users\Merkulovaae\source\repos\Exceptions1\Exceptions1\bin\Debug\net6.0\Exceptions1.exe
+C:\Users\Merkulovaae\source\repos\Exceptions1\Exceptions1\bin\Debug\net6.0\Exceptions1.deps.json
+C:\Users\Merkulovaae\source\repos\Exceptions1\Exceptions1\bin\Debug\net6.0\Exceptions1.runtimeconfig.json
+C:\Users\Merkulovaae\source\repos\Exceptions1\Exceptions1\bin\Debug\net6.0\Exceptions1.dll
+C:\Users\Merkulovaae\source\repos\Exceptions1\Exceptions1\bin\Debug\net6.0\Exceptions1.pdb
+C:\Users\Merkulovaae\source\repos\Exceptions1\Exceptions1\obj\Debug\net6.0\Exceptions1.csproj.AssemblyReference.cache
+C:\Users\Merkulovaae\source\repos\Exceptions1\Exceptions1\obj\Debug\net6.0\Exceptions1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Merkulovaae\source\repos\Exceptions1\Exceptions1\obj\Debug\net6.0\Exceptions1.AssemblyInfoInputs.cache
+C:\Users\Merkulovaae\source\repos\Exceptions1\Exceptions1\obj\Debug\net6.0\Exceptions1.AssemblyInfo.cs
+C:\Users\Merkulovaae\source\repos\Exceptions1\Exceptions1\obj\Debug\net6.0\Exceptions1.csproj.CoreCompileInputs.cache
+C:\Users\Merkulovaae\source\repos\Exceptions1\Exceptions1\obj\Debug\net6.0\Exceptions1.dll
+C:\Users\Merkulovaae\source\repos\Exceptions1\Exceptions1\obj\Debug\net6.0\refint\Exceptions1.dll
+C:\Users\Merkulovaae\source\repos\Exceptions1\Exceptions1\obj\Debug\net6.0\Exceptions1.pdb
+C:\Users\Merkulovaae\source\repos\Exceptions1\Exceptions1\obj\Debug\net6.0\Exceptions1.genruntimeconfig.cache
+C:\Users\Merkulovaae\source\repos\Exceptions1\Exceptions1\obj\Debug\net6.0\ref\Exceptions1.dll
