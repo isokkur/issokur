@@ -20,59 +20,63 @@ namespace WpfApp4
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window // Объявление класса MainWindow, наследующего от Window
     {
-        public MainWindow()
+        public MainWindow() // Конструктор класса MainWindow
         {
-            InitializeComponent();
-        }
-        private async void ProcessFileButton_Click(object sender, RoutedEventArgs e)
-        {
-            string inputFile = InputFileTextBox.Text;
-            string outputFile = OutputFileTextBox.Text;
-            int minWordLength = int.Parse(MinWordLengthTextBox.Text);
-            bool removePunctuation = RemovePunctuationCheckBox.IsChecked ?? false;
-
-            await Task.Run(() => ProcessFile(inputFile, outputFile, minWordLength, removePunctuation));
-
-            MessageBox.Show("File processing completed successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+            InitializeComponent(); // Инициализация компонентов окна
         }
 
-        private void ProcessFile(string inputFile, string outputFile, int minWordLength, bool removePunctuation)
+        private async void ProcessFileButton_Click(object sender, RoutedEventArgs e) // Обработчик события нажатия на кнопку ProcessFileButton
         {
-            try
+            string inputFile = InputFileTextBox.Text; // Считывание текста из текстового поля InputFileTextBox
+            string outputFile = OutputFileTextBox.Text; // Считывание текста из текстового поля OutputFileTextBox
+            int minWordLength = int.Parse(MinWordLengthTextBox.Text); // Преобразование текста из текстового поля MinWordLengthTextBox в целое число
+            bool removePunctuation = RemovePunctuationCheckBox.IsChecked ?? false; // Получение значения флажка RemovePunctuationCheckBox
+
+            await Task.Run(() => ProcessFile(inputFile, outputFile, minWordLength, removePunctuation)); // Асинхронный запуск обработки файла
+
+            MessageBox.Show("File processing completed successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information); // Вывод сообщения об успешном завершении обработки файла
+        }
+
+        private void ProcessFile(string inputFile, string outputFile, int minWordLength, bool removePunctuation) // Метод для обработки файла
+        {
+            try // Блок обработки исключений
             {
-                string[] lines = File.ReadAllLines(inputFile);
-                List<string> processedLines = new List<string>();
+                string[] lines = File.ReadAllLines(inputFile); // Чтение всех строк из входного файла
+                List<string> processedLines = new List<string>(); // Инициализация списка для обработанных строк
 
-                foreach (string line in lines)
+
+                foreach (string line in lines) // Цикл по строкам файла
                 {
-                    string[] words = line.Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries); 
-                    StringBuilder processedLine = new StringBuilder();
+                    string[] words = line.Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries); // Разделение строки на слова
+                    StringBuilder processedLine = new StringBuilder(); // Создание объекта для формирования обработанной строки
 
-                    foreach (string word in words)
+                    foreach (string word in words) // Цикл по словам строки
                     {
-                        if (word.Length >= minWordLength)
+                        if (word.Length >= minWordLength) // Проверка длины слова
                         {
-                            string processedWord = word;
-
-                            if (removePunctuation)
                             {
-                                processedWord = Regex.Replace(processedWord, @"[^\w\s]", "");
-                            }
+                                string processedWord = word; // Инициализация обработанного слова
 
-                            processedLine.Append(processedWord + " ");
+                                if (removePunctuation) // Проверка необходимости удаления знаков пунктуации
+                                {
+                                    processedWord = Regex.Replace(processedWord, @"[^\w\s]", ""); // Удаление знаков пунктуации
+                                }
+
+                                processedLine.Append(processedWord + " "); // Добавление обработанного слова к обработанной строке
+                            }
                         }
+
+                        processedLines.Add(processedLine.ToString().Trim()); // Добавление обработанной строки в список
                     }
 
-                    processedLines.Add(processedLine.ToString().Trim());
+                    File.WriteAllLines(outputFile, processedLines); // Запись всех обработанных строк в выходной файл
                 }
-
-                File.WriteAllLines(outputFile, processedLines);
             }
-            catch (Exception ex)
+            catch (Exception ex) // Обработка исключений
             {
-                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error); // Вывод сообщения об ошибке
             }
         }
     }
