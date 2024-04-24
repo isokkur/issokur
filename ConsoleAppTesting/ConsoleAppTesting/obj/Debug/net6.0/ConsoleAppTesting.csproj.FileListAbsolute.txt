@@ -1,0 +1,15 @@
+\\iscsi\profstud\Merkulovaae\Desktop\ConsoleAppTesting\ConsoleAppTesting\bin\Debug\net6.0\ConsoleAppTesting.exe
+\\iscsi\profstud\Merkulovaae\Desktop\ConsoleAppTesting\ConsoleAppTesting\bin\Debug\net6.0\ConsoleAppTesting.deps.json
+\\iscsi\profstud\Merkulovaae\Desktop\ConsoleAppTesting\ConsoleAppTesting\bin\Debug\net6.0\ConsoleAppTesting.runtimeconfig.json
+\\iscsi\profstud\Merkulovaae\Desktop\ConsoleAppTesting\ConsoleAppTesting\bin\Debug\net6.0\ConsoleAppTesting.dll
+\\iscsi\profstud\Merkulovaae\Desktop\ConsoleAppTesting\ConsoleAppTesting\bin\Debug\net6.0\ConsoleAppTesting.pdb
+\\iscsi\profstud\Merkulovaae\Desktop\ConsoleAppTesting\ConsoleAppTesting\obj\Debug\net6.0\ConsoleAppTesting.csproj.AssemblyReference.cache
+\\iscsi\profstud\Merkulovaae\Desktop\ConsoleAppTesting\ConsoleAppTesting\obj\Debug\net6.0\ConsoleAppTesting.GeneratedMSBuildEditorConfig.editorconfig
+\\iscsi\profstud\Merkulovaae\Desktop\ConsoleAppTesting\ConsoleAppTesting\obj\Debug\net6.0\ConsoleAppTesting.AssemblyInfoInputs.cache
+\\iscsi\profstud\Merkulovaae\Desktop\ConsoleAppTesting\ConsoleAppTesting\obj\Debug\net6.0\ConsoleAppTesting.AssemblyInfo.cs
+\\iscsi\profstud\Merkulovaae\Desktop\ConsoleAppTesting\ConsoleAppTesting\obj\Debug\net6.0\ConsoleAppTesting.csproj.CoreCompileInputs.cache
+\\iscsi\profstud\Merkulovaae\Desktop\ConsoleAppTesting\ConsoleAppTesting\obj\Debug\net6.0\ConsoleAppTesting.dll
+\\iscsi\profstud\Merkulovaae\Desktop\ConsoleAppTesting\ConsoleAppTesting\obj\Debug\net6.0\refint\ConsoleAppTesting.dll
+\\iscsi\profstud\Merkulovaae\Desktop\ConsoleAppTesting\ConsoleAppTesting\obj\Debug\net6.0\ConsoleAppTesting.pdb
+\\iscsi\profstud\Merkulovaae\Desktop\ConsoleAppTesting\ConsoleAppTesting\obj\Debug\net6.0\ConsoleAppTesting.genruntimeconfig.cache
+\\iscsi\profstud\Merkulovaae\Desktop\ConsoleAppTesting\ConsoleAppTesting\obj\Debug\net6.0\ref\ConsoleAppTesting.dll
