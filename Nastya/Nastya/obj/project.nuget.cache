@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "6Dq0PUlqJ90l4BhqJVqVwJjXngDpKHOwV+ujh1kUlUnJZdw2H61Vt0c+cE1Y8Piioqg/JGcyuH3huwJaUETABQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\fffg9\\source\\repos\\Nastya\\Nastya\\Nastya.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fffg9\\.nuget\\packages\\xunit\\2.8.0\\xunit.2.8.0.nupkg.sha512",
+    "C:\\Users\\fffg9\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\fffg9\\.nuget\\packages\\xunit.analyzers\\1.13.0\\xunit.analyzers.1.13.0.nupkg.sha512",
+    "C:\\Users\\fffg9\\.nuget\\packages\\xunit.assert\\2.8.0\\xunit.assert.2.8.0.nupkg.sha512",
+    "C:\\Users\\fffg9\\.nuget\\packages\\xunit.core\\2.8.0\\xunit.core.2.8.0.nupkg.sha512",
+    "C:\\Users\\fffg9\\.nuget\\packages\\xunit.extensibility.core\\2.8.0\\xunit.extensibility.core.2.8.0.nupkg.sha512",
+    "C:\\Users\\fffg9\\.nuget\\packages\\xunit.extensibility.execution\\2.8.0\\xunit.extensibility.execution.2.8.0.nupkg.sha512"
+  ],
+  "logs": []
+}
