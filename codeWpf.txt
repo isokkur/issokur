@@ -1,0 +1,78 @@
+МАСШТАБИРУЕМОСТЬ ОКНА:
+ Title="" Height="450" Width="800" WindowStartupLocation="CenterScreen"  ResizeMode="NoResize">
+
+ПЕРЕХОД МЕЖДУ СТРАНИЦАМИ: 
+
+ private void Button_back(object sender, RoutedEventArgs e)
+ {
+     StartWindow q = new StartWindow();
+     q.Show();
+     this.Close();
+ }
+
+ПОДКЛЮЧЕНИЕ К БД 
+
+namespace ExpeditionTour
+{
+    public static class AddDate
+    {
+        public static ExpeditionEEntities db = new ExpeditionEEntities();
+    }
+}
+
+ВСПЛЫВАЮЩИЕ ОКНА :
+MessageBox.Show("Успешно!");
+
+АВТОРИЗАЦИЯ
+private void AuthorizationButton(object sender, RoutedEventArgs e)
+{
+    string inputLogin = LoginInput.Text;
+    string inputPassword = PasswordInput.Text;
+    var employee = DataBase.db.Employee.SingleOrDefault(u => u.Login_Employee == inputLogin && u.Password_Employee == inputPassword);
+
+    if (employee != null)
+    {
+        EmployeeMenu Q = new EmployeeMenu();
+        Q.Show();
+        this.Close();
+    }
+    else
+    {
+        MessageBox.Show("Данные не найдены. Проверьте правильность введения логина и пароля");
+    }
+}
+класс переменных 
+ public static class Variables
+{
+    public static string FIO_users { get; set; }
+}
+
+Каталог товаров 
+    <Button Content="Назад" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="46" Width="86" Background="#FF76E383" FontFamily="Comic Sans MS" FontSize="20" Foreground="#FF498C51" Click="ButtonExit"/>
+    <TextBox TextWrapping="Wrap" x:Name="CurrentFIO" Text="" FontFamily="Comic Sans MS" FontSize="16" Foreground="#FF498C51" Margin="465,10,21,428" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" />
+    <DataGrid Margin="37,135,37,10" x:Name="products" AutoGenerateColumns="False">
+        <DataGrid.Columns>
+            <DataGridTextColumn Header ="Наименование" Width="*" Binding="{Binding Name}"></DataGridTextColumn>
+            <DataGridTextColumn Header ="Описание" Width="*" Binding="{Binding Opisanie}"></DataGridTextColumn>
+            <DataGridTextColumn Header ="Производитель" Width="*" Binding="{Binding Proizvoditel}"></DataGridTextColumn>
+            <DataGridTextColumn Header ="Цена" Width="*" Binding="{Binding Stoimost}"></DataGridTextColumn>
+            <DataGridTextColumn Header ="Наличие на складе" Width="*" Binding="{Binding Kolichestvo}"></DataGridTextColumn>
+        </DataGrid.Columns>
+    </DataGrid>
+ПОИСК
+    <TextBox TextWrapping="Wrap" x:Name="EnterSearch" Text="" FontFamily="Comic Sans MS" FontSize="16" Foreground="#FF498C51" Margin="37,67,507,371" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" />
+    <Button Content="Поиск" HorizontalAlignment="Left" Margin="298,74,0,0" VerticalAlignment="Top" Height="33" Width="63" Background="#FF76E383" FontFamily="Comic Sans MS" FontSize="14" Foreground="#FF498C51" Click="ButtonSearch"/>
+
+ВЫВЕСТИ ФИО ТЕКУЗЕГО ПОЛЬЗОВАТЕЛЯ
+CurrentFIO.Text = FIO_users;
+ВЫГРУЗИТЬ ТАБЛИЦУ В ДАТАГРИД
+products.ItemsSource = AddDataBase.db.Tovar.ToList();
+
+ПОИСК КОД
+ private void ButtonSearch(object sender, RoutedEventArgs e)
+ {
+ products.ItemsSource = AddDataBase.db.Tovar.Where(u => u.Name == EnterSearch.Text).ToList();
+ }
+
+
+
